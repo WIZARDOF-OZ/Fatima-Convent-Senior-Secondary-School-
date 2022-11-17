@@ -1,0 +1,39 @@
+body{
+    line-height: 1.7;
+    background-color: antiquewhite;
+}
+
+
+a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight:500;
+    color: #20212c;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+    position: relative;
+}
+
+            /* Navbar */
+
+.navbar {
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+    
+}
+
+.navbar .navbar-nav{
+    padding-right: 5rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    background: -webkit-linear-gradient(#00e0fe, #1107fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+                    /* End Of NavBar */
