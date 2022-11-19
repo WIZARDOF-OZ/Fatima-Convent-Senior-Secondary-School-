@@ -1,30 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-
-/*** 
-====================================================================
-	Reset
-====================================================================
- ***/
-
-* {
-	margin: 0px;
-	padding: 0px;
-	border: none;
-	outline: none;
-	font-size: 100%;
-	line-height: inherit;
-}
-
-/*** 
-====================================================================
-	Global Settings
-====================================================================
- ***/
-
-
-
 /* Variables */
 :root {
   --header-height: 3.5rem;
@@ -138,7 +114,7 @@ section {
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link {
-  background: -webkit-linear-gradient(#00e0fe, #1107fe);
+  background: -webkit-linear-gradient(#00e0fe, #4a4882);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -160,96 +136,3 @@ section {
   }
 }
 /* End Of NavBar */
-
-/* Preloader */
-
-/* 
-.preloader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 999999;
-	background-color: rgba(0, 0, 0, 0);
-}
-
-.preloader .icon {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background-color: rgba(0, 0, 0, 0);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-image: url(../images/icons/preloader.svg);
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-
-.page-loaded .preloader .icon {
-	opacity: 0;
-}
-
-.preloader:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: #ffffff;
-	z-index: 0;
-	-webkit-transform: translateX(0%);
-	-ms-transform: translateX(0%);
-	transform: translateX(0%);
-	-webkit-transition: all 800ms ease;
-	-moz-transition: all 800ms ease;
-	-ms-transition: all 800ms ease;
-	-o-transition: all 800ms ease;
-	transition: all 800ms ease;
-}
-
-.page-loaded .preloader:before {
-	-webkit-transform: translateX(-101%);
-	-ms-transform: translateX(-101%);
-	transform: translateX(-101%);
-}
-
-.preloader:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: #EF5525;
-	z-index: 2;
-	-webkit-transform: translateX(101%);
-	-ms-transform: translateX(101%);
-	transform: translateX(101%);
-	-webkit-transition: all 800ms ease;
-	-moz-transition: all 800ms ease;
-	-ms-transition: all 800ms ease;
-	-o-transition: all 800ms ease;
-	transition: all 800ms ease;
-}
-
-.page-loaded .preloader:after {
-	-webkit-transform: translateX(-101%);
-	-ms-transform: translateX(-101%);
-	transform: translateX(-101%);
-} */
-
-/* End Of Preloader */
-/* Hero */
-
-
-
-
-/* End Of Hero */
