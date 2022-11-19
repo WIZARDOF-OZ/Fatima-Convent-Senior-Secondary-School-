@@ -1,3 +1,7 @@
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 body{
     line-height: 1.7;
     background-color: antiquewhite;
@@ -22,18 +26,47 @@ section {
 
 .navbar {
     box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.navbar .navbar-nav .nav-item{
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item{
+    padding: 2px;
+}
+
+.navbar .navbar-nav .nav-item::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   margin: 0 auto;
+    background-color: black;
+    width: 0;
+    height: 4px;
+    transition: all .5s;
+    content: '';
+}
+
+
+.navbar .navbar-nav .nav-item:hover::after{
+    width: 100%;
+}
+
+@media  screen and (min-width:992px){
+    .navbar{
+        padding: 0;
+    } 
+     .navbar .navbar-nav .nav-link{
+        padding: 1em 0;
+    } 
     
+    .navbar .navbar-nav .nav-item{
+       margin: 0 1em;
+    } 
 }
-
-.navbar .navbar-nav{
-    padding-right: 5rem;
-}
-
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    background: -webkit-linear-gradient(#00e0fe, #1107fe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
                     /* End Of NavBar */
