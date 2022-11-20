@@ -159,6 +159,28 @@ section {
     margin: 0 1em;
   }
 }
+
+/* Dropdown Menu */
+
+
+.dropdown-menu{
+   background-color: #FFf493; 
+   /* margin: -23px; */
+}
+
+.dropdown-item{
+   /* background-color: #FFF493;   */
+  transition: all 0.4s ease-in-out;
+}
+
+
+/* .dropdown-item:hover{
+background-color: #F6DD00;
+color: black;
+transition: .2s;
+
+}  */
+
 /* End Of NavBar */
 
 /* Preloader */
