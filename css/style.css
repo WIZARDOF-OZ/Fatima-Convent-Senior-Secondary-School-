@@ -163,8 +163,10 @@ section {
 
 /* Preloader */
 
-/* 
-.preloader {
+ 
+
+
+/* .preloader {
 	position: fixed;
 	left: 0px;
 	top: 0px;
@@ -244,7 +246,7 @@ section {
 	-webkit-transform: translateX(-101%);
 	-ms-transform: translateX(-101%);
 	transform: translateX(-101%);
-} */
+}   */
 
 /* End Of Preloader */
 /* Hero */
