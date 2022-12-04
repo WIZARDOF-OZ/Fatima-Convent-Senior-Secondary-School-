@@ -1,1 +1,0 @@
-In this folder required images will be added
