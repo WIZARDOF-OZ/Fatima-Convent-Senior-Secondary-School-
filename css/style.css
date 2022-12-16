@@ -1168,7 +1168,7 @@ p {
 /*=====================================================
     7. COURSE css 
 ======================================================*/
-
+/* 
 .singel-course{
     background-color: #fff;
     border-radius: 5px;
@@ -1328,8 +1328,24 @@ p {
 .course-slied .slick-arrow:hover i{
     border-color: #ffc600;
     background-color: #ffc600;
+} */
+
+
+/*=====================================================
+    7. VIDEO FEATURES css 
+======================================================*/
+#our_vision{
+    position: relative;
+}
+.msggg h2,
+.message{
+    position: relative;
 }
 
+.message{
+    top: 18px;
+    left: 50px;
+}
 
 /*=====================================================
     8. VIDEO FEATURES css 
