@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
 /*
 ***
 ***
@@ -7,6 +10,7 @@ Theme Version:	1.0.0
 ***
 ***
 */
+>>>>>>> aa1c5a13df0ce753c282a67b0935dd523f9d7315
 (function($) {
 	
 		'use strict';

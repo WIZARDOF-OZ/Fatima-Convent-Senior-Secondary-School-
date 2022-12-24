@@ -1,12 +1,4 @@
-/*
-***
-***
-Name: 			functions.js
-Written by: 	ThemeTrade 
-Theme Version:	1.0.0
-***
-***
-*/
+
 (function($) {
 	
 		'use strict';
@@ -446,7 +438,7 @@ Theme Version:	1.0.0
 				var manageLoader = function() {
 					setTimeout(function(){
 						jQuery('#loading-icon-bx').remove();
-					}, 0);
+					},0);
 				}
 				
 				var codeSecurity = function() {
