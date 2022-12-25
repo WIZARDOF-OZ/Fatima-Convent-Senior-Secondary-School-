@@ -479,7 +479,7 @@ Theme Version:	1.0.0
 					});
 				}
 				
-				var manageLoader = function() {
+			var manageLoader = function () {
 					setTimeout(function(){
 						jQuery('#loading-icon-bx').remove();
 					}, 0);
