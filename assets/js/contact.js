@@ -133,7 +133,7 @@
 									$('.subscription-form')[0].reset();
 								},
 								error : function(data){
-									alert('There is something wrong. Please wait or try again later.');
+									alert('Currently this form doesnot work as the backend code is not written - By One of the Developer of this website');
 								},
 								
 							});
