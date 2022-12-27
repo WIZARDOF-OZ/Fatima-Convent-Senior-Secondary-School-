@@ -142,6 +142,10 @@
 					
 					
 				}
+
+
+			
+
 			
 				/* Functions Calling */
 				return {
@@ -150,6 +154,7 @@
 						subscriptionForm();
 						validateInteger();
 						validateCharacter();
+						
 					},
 				}
 		

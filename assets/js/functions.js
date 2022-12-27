@@ -438,7 +438,7 @@
 				var manageLoader = function() {
 					setTimeout(function(){
 						jQuery('#loading-icon-bx').remove();
-					},4000);
+					},3000);
 				}
 				
 				var codeSecurity = function() {
@@ -464,6 +464,9 @@
                       else {return true;}
                     });
 				}
+
+			
+
 				
 				/* Function ============ */
 				return {
@@ -480,7 +483,8 @@
 						setCountDown();
 						setStylishScroll();
 						manageLeftSideMenu();
-						codeSecurity();
+						// codeSecurity();
+						
 					},
 					
 					afterLoadThePage:function(){
@@ -489,6 +493,7 @@
 						setCounterUp();
 						masonryLayout();
 						manageLoader();
+						
 					},
 					
 					changeTheScreen:function(){
