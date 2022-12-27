@@ -327,7 +327,7 @@
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-    width: 140px;
+	width: 100px;
     height: 80px;
     position: relative;
     z-index: 9;
@@ -360,12 +360,17 @@
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
 }
+.logo {
+	visibility: hidden;
+}
 @media only screen and (max-width: 767px) {
-    .menu-logo,
+	.menu-logo,
+		.logo,
 	.is-fixed .menu-logo{
-        width: 100px;
+		width: 100px;
 		max-width: 100px;
-		height:50px;
+		height: 60px;
+			visibility: visible;
     }
 	.menu-logo img{
 		max-width: 100px;
@@ -382,6 +387,7 @@
 		padding: 11px 0;
 	}
 }
+
 /*=================================
 	4. MENU BAR
 =================================*/
@@ -894,7 +900,7 @@
 		-ms-transform: translateY(-50%);
 		margin: 0;
 		right: -1px;
-		color:#000;
+		color: rgb(87, 71, 71);
 	}
 	.menu-links .nav > li .mega-menu > li{
 		padding:0;
