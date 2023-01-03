@@ -1,5 +1,5 @@
 // Login Page Code Goes Here
-function validate()
+function validate(){
 
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
@@ -12,3 +12,5 @@ if (username == "admin" && password == "user") {
 else {
     alert("Login Failed")
 }
+}
+validate()
