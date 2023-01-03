@@ -1890,7 +1890,12 @@ button.back-to-top {
 	padding:0 0 0 20px;
 }
 .pt-logo{
-	padding:20px 0;
+	padding:20px ;
+	width: 27rem;
+    height: 68px;
+    margin-top: -12px;
+    right: 136px;
+    position: relative;
 }
 
 .pt-social-link,
@@ -1909,9 +1914,9 @@ button.back-to-top {
     top: 0;
     opacity: 1;
     z-index: 999999999;
-    background-image: url(../images/loading2.gif);
+    background-image: url(../images/loading4.gif);
     background-repeat: no-repeat;
-    background-size: 170px;
+    background-size: 20rem;
     background-position: center;
 }
 /*========================
