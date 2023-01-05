@@ -322,7 +322,7 @@
 									<div class="form-group">
 										<div class="input-group">
 											<div class="g-recaptcha" data-sitekey="6Lec4sojAAAAACvjAXXjKVN_P8s2P0W9WgJ8Ctok" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback" data-secretkey="6Lec4sojAAAAAAQJL7uPZK4AnXyZcbvou9am3bgn"></div>
-											<input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
+											<input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha" value="reset">
 										</div>
 									</div>
 								</div>
@@ -445,6 +445,7 @@
     <button class="back-to-top fa fa-chevron-up" ></button>
 </div>
 <!-- External JavaScripts -->
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
 <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
@@ -460,8 +461,11 @@
 <script src="assets/js/functions.js"></script>
 <script src="assets/js/contact.js"></script>
 <script src='assets/vendors/switcher/switcher.js'></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+async defer>
+</script>
 <!-- <script src='assets/www.google.com/recaptcha/api.js'></script> -->
-<script src="https://www.google.com/recaptcha/api.js"></script>
+<!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
 </body>
 
 
