@@ -47,7 +47,12 @@
 	<!-- STYLESHEETS ============================================= -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
-	
+	<script type="text/javascript">
+		var onloadCallback = function() {
+		  grecaptcha.render('g-recaptcha', {
+			'sitekey' : '6Lec4sojAAAAACvjAXXjKVN_P8s2P0W9WgJ8Ctok'
+		  });
+		};</script>
 </head>
 <body id="bg">
 <div class="page-wraper">
@@ -444,6 +449,7 @@
     <!-- scroll top button -->
     <button class="back-to-top fa fa-chevron-up" ></button>
 </div>
+
 <!-- External JavaScripts -->
 
 <script src="assets/js/jquery.min.js"></script>
