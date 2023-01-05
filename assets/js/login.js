@@ -10,7 +10,7 @@ if (username == "admin" && password == "user") {
 
 }
 else {
-    alert("Login Failed")
+     alert("Login Failed")
+  
 }
 }
-validate()
