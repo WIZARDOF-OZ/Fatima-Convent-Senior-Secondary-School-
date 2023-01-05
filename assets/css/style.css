@@ -1894,7 +1894,7 @@ button.back-to-top {
 	width: 27rem;
     height: 68px;
     margin-top: -12px;
-    right: 136px;
+    right: 75px;
     position: relative;
 }
 
@@ -1914,7 +1914,7 @@ button.back-to-top {
     top: 0;
     opacity: 1;
     z-index: 999999999;
-    background-image: url(../images/loading4.gif);
+    background-image: url(../images/loading3.gif);
     background-repeat: no-repeat;
     background-size: 20rem;
     background-position: center;
@@ -3349,7 +3349,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#391800', end
 		margin-bottom: 30px;
 	}
 	.pt-logo img{
-		width:150px;
+		width: 257px;
+		left: 10px;
+		position: relative;
+	}
 	}
 	.pt-social-link{
 		display:none !important;
