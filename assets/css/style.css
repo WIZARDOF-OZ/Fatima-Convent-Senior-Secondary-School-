@@ -40,6 +40,9 @@
   * END TABLE CONTENT *  
 ======================================
 */
+body {
+	background-image: linear-gradient(#fffcdb, #a5542b, 45deg);
+}
 
 /*=================================
 	1. HEADER
