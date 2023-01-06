@@ -317,6 +317,11 @@
 /*=================================
 	3. HEADER LOGO
 =================================*/
+.logo-width {
+	width: 144px !important;
+	/* position: absolute; */
+	/* background-image: url(./../../assets/images/fatima_name_logo-removebg-preview.png); */
+}
 .menu-logo {
     display: table;
     float: left;
