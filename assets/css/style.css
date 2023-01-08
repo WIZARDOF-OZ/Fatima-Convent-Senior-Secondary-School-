@@ -3338,6 +3338,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#391800', end
 	}
 }
 @media only screen and (max-width: 576px) {
+	
 	.footer-title{
 		font-size:14px;
 		padding-bottom: 10px;
