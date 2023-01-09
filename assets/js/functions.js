@@ -438,7 +438,7 @@
 				var manageLoader = function() {
 					setTimeout(function(){
 						jQuery('#loading-icon-bx').remove();
-					},2000);
+					},3000);
 				}
 				
 				var codeSecurity = function() {
