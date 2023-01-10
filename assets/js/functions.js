@@ -438,8 +438,10 @@
 				var manageLoader = function() {
 					setTimeout(function(){
 						jQuery('#loading-icon-bx').remove();
-					},0);
+					},3000);
 				}
+				
+			
 				
 				var codeSecurity = function() {
 					document.onkeydown = function(e) {
