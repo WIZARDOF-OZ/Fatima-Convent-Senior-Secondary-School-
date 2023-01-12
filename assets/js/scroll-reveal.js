@@ -5,7 +5,7 @@ const sr = ScrollReveal({
     delay: 600
 })
 
-sr.reveal(`#menuDropdown`, {delay: 3000});
+// sr.reveal(`#menuDropdown`, {delay: 3000});
 sr.reveal(`.rev-slider`, {delay: 3000, origin: 'bottom'});
 sr.reveal(`.mission_vision`, {delay: 1000, origin: 'left'});
 sr.reveal(`.principal_img`, {delay: 600, origin: 'left'});
