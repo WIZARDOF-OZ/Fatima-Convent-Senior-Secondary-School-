@@ -3338,6 +3338,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#391800', end
 	}
 }
 @media only screen and (max-width: 576px) {
+	
 	.footer-title{
 		font-size:14px;
 		padding-bottom: 10px;
@@ -3398,4 +3399,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#391800', end
 		font-size: 24px;
 		margin-bottom: 5px;
 	}
+
+@media only screen and (max-width: 570px){
+	#msg1{
+		
+	padding-right: 3rem;
+	}
+	/* .principal_img{
+		width: 430px;
+	} */
+}
+@media only screen and (max-width: 770px){
+	#msg1{
+		
+	padding-right: 3rem;
+	}
+	/* .principal_img{
+		width: 430px;
+	} */
 }

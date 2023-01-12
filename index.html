@@ -90,7 +90,7 @@
 									<option data-icon="flag flag-us">English US</option>
 								</select>
 							</li> -->
-								<!-- <li><a href="login.html"><i class="ti-new-window"></i> Login</a></li> -->
+								 <!-- <li><a href="login.html"><i class="ti-new-window loginbar"></i> Login</a></li> -->
 								<!-- <li><a href="register.html">Register</a></li> -->
 								</ul>
 								</div>
@@ -138,7 +138,7 @@
 						</div>
 						<!-- Navigation Menu ==== -->
 						<div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
-							<div class=" logo">
+							<div class=" logo" id="logo1">
 								<a href="index.html"><img src="assets/images/school__logo-removebg-preview.png" alt="" width="60"></a>
 							</div>
 							<ul class="nav navbar-nav">
@@ -504,10 +504,10 @@
 				<!-- Our Services END -->
 
 				<!-- Popular Courses -->
-				<div class="section-area section-sp2 popular-courses-bx">
+				<div class="section-area section-sp2 popular-courses-bx mission_vision">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-12 heading-bx left">
+							<div class="col-md-12 heading-bx left mission_vision">
 								<h2 class="title-head">Our <span>Vision </span></h2>
 								<p>To cater to the educational needs of the children of transferable Central Government
 									employees including Defence and Para-Military personnel by providing a common
@@ -654,24 +654,26 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 text-center text-white">
-								<h2>Online Courses To Learn</h2>
-								<h5>Own Your Feature Learning New Skills Online</h5>
+								<h2 class="principal_title">Principal's Message</h2>
+								<h5 class="principal_title">Below down is the message from our principal</h5> 
 								<div class="gdlr-core-text-box-item-content"
 									style="font-size: 16px ;font-weight: 400 ;text-transform: none ;color: #d7d6ff ;">
 
-									<p><em><strong><img class="alignleft "
+									<em><strong style="color: #fff; 
+										"><img class="alignleft principal_img"
 													src="https://donboscoguwahati.net/wp-content/uploads/2021/06/Principal-message-pic2-1024x682.jpg?x51994"
-													style="width: 450px; height: 300px;" alt="">Dear
-												Friends,</strong></em><br>Welcome to Fatima Convent Senior Secondary
+													style="width: 430px; height: 300px; position: relative; left: 18px;" alt=""> <p id="msg1" class="msg_1p">Dear
+														Friends,</p>
+														</strong></em><br><p class="principal_msg" >Welcome to Fatima Convent Senior Secondary
 										School , Rangia!</p>
-									<p>I gladly welcome all of you to our enriching website, which I
+									<p class="principal_msg">I gladly welcome all of you to our enriching website, which I
 										am sure will serve as an essential interactive tool for all
 										of you to acquaint yourselves with the large and extended
 										FCSS family.</p>
-									<p>Over more than seven decades of relentless academic endeavour
+									<p class="principal_msg">Over more than seven decades of relentless academic endeavour
 										and brilliance, our school has become a much sought after
 										educational institution that…</p>
-									<p><button class="btn"><a href="/about-1.html"
+									<p class="principal_msg"><button class="btn"><a href="/about-1.html"
 												style="font-size: 15px; color: #ffffff; padding: 12px 15px 17px 15px; text-transform: none; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;">
 												Read More</a></button></a>
 									</p>
@@ -713,8 +715,8 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 text-center heading-bx">
-								<h2 class="title-head m-b0">Upcoming <span>Events</span></h2>
-								<p class="m-b0">Upcoming Education Events To Feed Brain. </p>
+								<h2 class="title-head m-b0 event-titls">Upcoming <span>Events</span></h2>
+								<p class="m-b0 event-titls">Upcoming Education Events To Feed Brain. </p>
 							</div>
 						</div>
 						<div class="row">
@@ -801,7 +803,7 @@
 							</div>
 						</div>
 						<div class="text-center">
-							<a href="#" class="btn">View All Event</a>
+							<a href="#" class="btn btn_event">View All Event</a>
 						</div>
 					</div>
 				</div>
@@ -1083,6 +1085,8 @@
 	<script src="assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 	<script src="assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 	<script src="assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script  src="https://unpkg.com/scrollreveal"></script>
+	<script async defer src="assets/js/scroll-reveal.js"></script>
 	<script>
 		jQuery(document).ready(function () {
 			var ttrevapi;

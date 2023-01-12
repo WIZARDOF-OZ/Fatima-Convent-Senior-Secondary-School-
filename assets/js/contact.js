@@ -1,4 +1,19 @@
 
+function SendMail(){
+    var params = {
+        from_name : document.getElementById("Name").value,
+        email_id : document.getElementById("Email").value,
+        message : document.getElementById("Message").value,
+        phone : document.getElementById("Phone").value,
+        subject : document.getElementById("Subject").value
+    }
+    emailjs.send("service_88kktfa","template_txfaohc", params).then(function(res){
+        alert("Success!" + res.status)
+    })
+}
+
+
+
 (function($) {
 	
 		'use strict';
@@ -103,6 +118,8 @@
 					
 					
 				}
+
+				
 				
 				var subscriptionForm = function()	{
 					if(!checkSelectorExistence('.subscription-form')){return;}
