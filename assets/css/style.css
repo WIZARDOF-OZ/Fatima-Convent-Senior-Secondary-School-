@@ -802,6 +802,11 @@ body {
     padding: 10px 20px;
 }
 
+.add-menu-right img {
+    border-radius: 10px;
+}
+
+
 .menu-links .nav>li.has-mega-menu.demos .mega-menu {
     left: auto;
     right: auto;
