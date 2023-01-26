@@ -1,7 +1,8 @@
 /*===================== 	Premery bg color =====================*/
 :root {
-    --primary: #f3d5aa;
+    --primary: #f3d5aa7c;
     --sc-primary: #fccc87;
+    --button-color: #939393;
 }
 
 /* Hex */
