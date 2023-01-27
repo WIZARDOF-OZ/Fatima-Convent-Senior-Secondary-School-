@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,6 +60,13 @@
 			emailjs.init("WtTFiyLzg19ww4rzN");
 		})();
 	</script>
+	<script>
+		const btn_send = ()=>{
+addEventListener('submit', () => {
+document.getElementsByClassName('btn-send')
+})
+		}
+	</script>
 </head>
 
 <body id="bg">
@@ -70,24 +78,12 @@
 			<div class="top-bar">
 				<div class="container">
 					<div class="row d-flex justify-content-between">
-						<!-- <div class="topbar-left">
-						<ul>
-							 <li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
-							<li><a href="javascript:;"><i class="fa fa-envelope-o"></i>Support@website.com</a></li> 
-						<li><a href="login.html">Login</a></li>
-
-						</ul>
-					</div>   -->
+						
 						<div class="topbar-right">
 							<ul>
-								<!-- <li>
-							<select class="header-lang-bx">
-								<option data-icon="flag flag-uk">English UK</option>
-								<option data-icon="flag flag-us">English US</option>
-							</select>
-						</li> -->
+							
 								<li><a href="login.html"><i class="ti-new-window"></i> Login</a></li>
-								<!-- <li><a href="register.html">Register</a></li> -->
+							
 							</ul>
 						</div>
 					</div>
@@ -144,17 +140,13 @@
 										<li><a href="about-1.html">About</a>
 										</li>
 										<li><a href="event.html">Event</a></li>
-										<!-- <li><a href="javascript:;">FAQ's<i class="fa fa-angle-right"></i></a>
-										<ul class="sub-menu">
-											<li><a href="faq-1.html">FAQ's 1</a></li>
-											<li><a href="faq-2.html">FAQ's 2</a></li>
-										</ul>
-									</li> -->
+										
+									</li> 
 										<li class="active"><a href="contact-1.html">Contact Us</a>
 										</li>
 										<li><a href="/gallery.html">Gallery</a></li>
 
-										<!-- <li><a href="error-404.html">404 Page</a></li> -->
+										
 									</ul>
 								</li>
 								<li class="add-mega-menu"><a href="javascript:;">Academics<i
@@ -166,8 +158,7 @@
 												<li><a href="courses.html">Admission Details</a></li>
 												<li><a href="courses-details.html">Fee Structure</a></li>
 												<li><a href="profile.html">Result</a></li>
-												<!-- <li><a href="event.html">Upcoming Event</a></li>
-											<li><a href="membership.html">Membership</a></li> -->
+											->
 											</ul>
 										</li>
 										<li class="add-menu-right">
@@ -175,15 +166,7 @@
 										</li>
 									</ul>
 								</li>
-								<!-- <li><a href="javascript:;">Blog <i class="fa fa-chevron-down"></i></a>
-								<ul class="sub-menu">
-									<li><a href="blog-classic-grid.html">Blog Classic</a></li>
-									<li><a href="blog-classic-sidebar.html">Blog Classic Sidebar</a></li>
-									<li><a href="blog-list-sidebar.html">Blog List Sidebar</a></li>
-									<li><a href="blog-standard-sidebar.html">Blog Standard Sidebar</a></li>
-									<li><a href="blog-details.html">Blog Details</a></li>
-								</ul>
-							</li> -->
+							
 								<li class="nav-dashboard"><a href="javascript:;">Administration<i
 											class="fa fa-chevron-down"></i></a>
 									<ul class="sub-menu">
@@ -200,31 +183,7 @@
 
 									</ul>
 								</li>
-								<!-- <li class="nav-dashboard"><a href="javascript:;">Dashboard <i
-										class="fa fa-chevron-down"></i></a>
-								<ul class="sub-menu">
-									<li><a href="admin/index.html">Dashboard</a></li>
-									<li><a href="admin/add-listing.html">Add Listing</a></li>
-									<li><a href="admin/bookmark.html">Bookmark</a></li>
-									<li><a href="admin/courses.html">Courses</a></li>
-									<li><a href="admin/review.html">Review</a></li>
-									<li><a href="admin/teacher-profile.html">Teacher Profile</a></li>
-									<li><a href="admin/user-profile.html">User Profile</a></li>
-									<li><a href="javascript:;">Calendar<i class="fa fa-angle-right"></i></a>
-										<ul class="sub-menu">
-											<li><a href="admin/basic-calendar.html">Basic Calendar</a></li>
-											<li><a href="admin/list-view-calendar.html">List View Calendar</a></li>
-										</ul>
-									</li>
-									<li><a href="javascript:;">Mailbox<i class="fa fa-angle-right"></i></a>
-										<ul class="sub-menu">
-											<li><a href="admin/mailbox.html">Mailbox</a></li>
-											<li><a href="admin/mailbox-compose.html">Compose</a></li>
-											<li><a href="admin/mailbox-read.html">Mail Read</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li> -->
+						
 							</ul>
 							<div class="nav-social-link">
 								<a href="javascript:;"><i class="fa fa-facebook"></i></a>
@@ -280,8 +239,7 @@
 											class="btn outline radius-xl"><i class="fa fa-facebook"></i></a></li>
 									<li><a href="https://www.gmail.com/fatimaschoolrangia@gmail.com"
 											class="btn outline radius-xl"><i class="ti-email"></i></a></li>
-									<!-- <li><a href="#" class="btn outline radius-xl"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#" class="btn outline radius-xl"><i class="fa fa-google-plus"></i></a></li> -->
+								
 								</ul>
 							</div>
 						</div>
@@ -352,7 +310,7 @@
 										</div>
 									</div>
 									<div class="col-lg-12">
-										<button name="submit" type="submit" value="Submit" class="btn button-md" onclick="SendMail()"> Send
+										<button name="submit" type="submit" value="Submit" class="btn button-md btn-send"> Send
 											Message</button>
 									</div>
 								</div>
