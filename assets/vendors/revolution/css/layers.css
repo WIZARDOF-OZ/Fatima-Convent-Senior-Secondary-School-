@@ -9,6 +9,7 @@ date:      	18/03/15
 author:		themepunch
 email:     	info@themepunch.com
 website:   	http://www.themepunch.com
+fonts
 -----------------------------------------------------------------------------*/
 /* media queries */
 * {
@@ -5754,7 +5755,7 @@ website:   	http://www.themepunch.com
 }
 
 .subtitle-hidden {
-  visibility: hidden !important;
+  display: none !important;
 }
 
 .tp-caption.Newspaper-Subtitle {
@@ -10440,10 +10441,18 @@ iframe.twitter-share-button {
 }
 @media screen and (min-width: 1023px) {
   .tp-caption.Newspaper-Subtitle {
-    margin-top: 8.9vh !important;
+    margin-top: 4vh !important;
   }
   .Newspaper-Title {
-    margin-top: 8.9vh !important;
+    margin-top: 4vh !important;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 678px) {
+  .Newspaper-Title {
+    margin-top: 6vh !important;
+  }
+  .Newspaper-Subtitle {
+    margin-top: 5vh !important;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1023px) {
@@ -10455,6 +10464,11 @@ iframe.twitter-share-button {
   }
   .Newspaper-Title {
     margin-top: 1vh !important;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 720px) {
+  .Newspaper-Button {
+    width: 6rem !important;
   }
 }
 @media only screen and (max-width: 767px) {

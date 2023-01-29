@@ -155,8 +155,15 @@ date:      	18/03/15
 author:		themepunch
 email:     	info@themepunch.com
 website:   	http://www.themepunch.com
+fonts
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Fira+Code&family=Playfair+Display+SC:ital,wght@1,900&family=Playfair+Display:ital@1&display=swap');
 -----------------------------------------------------------------------------*/
 /* media queries */
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Fira+Code&family=Playfair+Display+SC:ital,wght@1,900&family=Playfair+Display:ital@1&display=swap');
+
+
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -3618,7 +3625,7 @@ website:   	http://www.themepunch.com
     line-height: 55px;
     font-weight: 400;
     font-style: normal;
-    font-family: $font-family_10;
+    font-family: 'Playfair Display SC', serif;
     padding: 0 0 10px 0;
     text-decoration: none;
     background-color: $background-color_6;
@@ -5999,8 +6006,16 @@ website:   	http://www.themepunch.com
 }
 
 .subtitle-hidden {
-    visibility: hidden !important;
+    display: none !important;
+    // visibility: hidden;
 }
+
+// @media screen and (max-width: 278px) and (min-width: 280px) {
+//     .Newspaper-Title {
+//         margin-top: 1000vh !important;
+//     }
+// }
+
 
 .tp-caption.Newspaper-Subtitle {
     color: $color_21;
@@ -10825,11 +10840,21 @@ iframe.twitter-share-button {
 
 @media screen and (min-width: 1023px) {
     .tp-caption.Newspaper-Subtitle {
-        margin-top: 8.9vh !important;
+        margin-top: 4vh !important;
     }
 
     .Newspaper-Title {
-        margin-top: 8.9vh !important;
+        margin-top: 4vh !important;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 678px) {
+    .Newspaper-Title {
+        margin-top: 6vh !important;
+    }
+
+    .Newspaper-Subtitle {
+        margin-top: 5vh !important;
     }
 }
 
@@ -10844,6 +10869,12 @@ iframe.twitter-share-button {
 
     .Newspaper-Title {
         margin-top: 1vh !important;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+    .Newspaper-Button {
+        width: 6rem !important;
     }
 }
 
