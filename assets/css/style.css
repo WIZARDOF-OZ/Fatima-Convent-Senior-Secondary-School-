@@ -776,6 +776,10 @@ body {
 }
 
 /* Menu */
+.add-mega-menu .open {
+    overflow-x: hidden;
+}
+
 .menu-links .nav>li.add-mega-menu .mega-menu,
 .has-mega-menu.add-mega-menu .mega-menu {
     display: block;
