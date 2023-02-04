@@ -955,6 +955,7 @@
         width: 100%;
         display: block;
         margin-bottom: auto;
+        margin-top: 4px;
     }
 
     .menu-links .nav li {
@@ -1146,7 +1147,8 @@
         margin: 0;
         width: 100%;
         width: 300px;
-        padding: 15px 15px 5px 15px;
+        padding: 15px 15px 5px;
+        overflow-x: hidden;
     }
 
     .rs-nav .is-fixed .menu-links .nav {
