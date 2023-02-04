@@ -118,7 +118,22 @@
 						}
 					});
 					
+
 				}
+ 
+				const  handlePreloader = function() {
+					setTimeout(function(){
+	if($('.preloader').length){
+		$('body').addClass('page-loaded');
+		$('.preloader').fadeOut(400)
+	}
+					}, 3000)
+						// if ($('.preloader').length) {
+						// 	$('body').addClass('page-loaded');
+						// 	$('.preloader').delay(800).fadeOut(300);
+						// }
+					}
+
 				
 				return {
 					initialHelper:function(){
@@ -126,6 +141,7 @@
 						setUpcomingEventCarousel();
 						setRecentNewsCarousel();
 						setTestimonialCarousel();
+						handlePreloader();
 					}
 				}
 				
