@@ -10,8 +10,10 @@ author:		themepunch
 email:     	info@themepunch.com
 website:   	http://www.themepunch.com
 fonts
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Fira+Code&family=Playfair+Display+SC:ital,wght@1,900&family=Playfair+Display:ital@1&display=swap');
 -----------------------------------------------------------------------------*/
 /* media queries */
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Fira+Code&family=Playfair+Display+SC:ital,wght@1,900&family=Playfair+Display:ital@1&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -3448,7 +3450,7 @@ fonts
   line-height: 55px;
   font-weight: 400;
   font-style: normal;
-  font-family: "Roboto Slab";
+  font-family: "Playfair Display SC", serif;
   padding: 0 0 10px 0;
   text-decoration: none;
   background-color: transparent;
