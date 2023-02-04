@@ -40,13 +40,24 @@
   * END TABLE CONTENT *  
 ======================================
 */
-body {
-    background-image: linear-gradient(#fffcdb, #a5542b, 45deg);
-}
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Fira+Code&family=Playfair+Display+SC:ital,wght@1,900&family=Playfair+Display:ital@1&family=Raleway:ital@1&display=swap');
+
+/* body {
+    /* background-image: linear-gradient(#fffcdb, #a5542b, 45deg); */
+/* font-family: 'Raleway', sans-serif,  !important; */
+
+/* } */
 
 /*=================================
 	1. HEADER
 =================================*/
+.img-align {
+    width: 110px;
+    margin-top: 14px;
+    margin-left: -14px;
+}
+
+
 .bg-fix {
     background-attachment: fixed;
     background-size: cover;
@@ -2274,86 +2285,86 @@ button.back-to-top {
 } */
 
 .preloader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 999999;
-	background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .preloader .icon {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
     background-size: 20rem;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-image: url(../images/loading3.gif);
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/loading3.gif);
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
 }
 
 .page-loaded .preloader .icon {
-	opacity: 0;
+    opacity: 0;
 }
 
 .preloader:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: #ffffff;
-	z-index: 0;
-	-webkit-transform: translateX(0%);
-	-ms-transform: translateX(0%);
-	transform: translateX(0%);
-	-webkit-transition: all 800ms ease;
-	-moz-transition: all 800ms ease;
-	-ms-transition: all 800ms ease;
-	-o-transition: all 800ms ease;
-	transition: all 800ms ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 0;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
 }
 
 .page-loaded .preloader:before {
-	-webkit-transform: translateX(-101%);
-	-ms-transform: translateX(-101%);
-	transform: translateX(-101%);
+    -webkit-transform: translateX(-101%);
+    -ms-transform: translateX(-101%);
+    transform: translateX(-101%);
 }
 
 .preloader:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background:#EF5525;
-	z-index: 2;
-	-webkit-transform: translateX(101%);
-	-ms-transform: translateX(101%);
-	transform: translateX(101%);
-	-webkit-transition: all 800ms ease;
-	-moz-transition: all 800ms ease;
-	-ms-transition: all 800ms ease;
-	-o-transition: all 800ms ease;
-	transition: all 800ms ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #EF5525;
+    z-index: 2;
+    -webkit-transform: translateX(101%);
+    -ms-transform: translateX(101%);
+    transform: translateX(101%);
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
 }
 
 .page-loaded .preloader:after {
-	-webkit-transform: translateX(-101%);
-	-ms-transform: translateX(-101%);
-	transform: translateX(-101%);
+    -webkit-transform: translateX(-101%);
+    -ms-transform: translateX(-101%);
+    transform: translateX(-101%);
 }
 
 
