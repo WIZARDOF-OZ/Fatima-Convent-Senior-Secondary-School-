@@ -2908,7 +2908,7 @@ button.back-to-top {
     content: "";
     height: 100%;
     position: absolute;
-    left: 50%;
+    left: 70%;
     background-color: #fff;
     top: 0;
     z-index: -1;
