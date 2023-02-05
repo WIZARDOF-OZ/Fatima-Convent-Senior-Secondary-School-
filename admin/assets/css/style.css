@@ -1878,7 +1878,7 @@ button.back-to-top {
     top: 0;
     opacity: 1;
     z-index: 999999999;
-	background-image: url(../../../assets/images/loading3.gif);
+	background-image: url(../../../assets/images/pre-loaders/loading3.gif);
     background-repeat: no-repeat;
     background-size: 60px;
     background-position: center;
@@ -3016,6 +3016,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#391800', end
 /* error */
 .error-page{
 	text-align:center;
+	margin-top: 14px;
 }
 .error-title{
 	font-size:140px;
