@@ -226,7 +226,7 @@
     }
 }
 
-@media only screen and (max-width: 361px) {
+@media only screen and (max-width: 290px) {
     .social-icon {
         display: none;
     }
@@ -886,6 +886,9 @@
 .search-btn {
     padding-left: 10px;
     margin-left: 10px;
+    position: absolute;
+    left: -30px;
+    top: 3px;
 }
 
 .search-btn:after {
