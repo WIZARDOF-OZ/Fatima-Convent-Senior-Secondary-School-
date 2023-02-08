@@ -54,6 +54,11 @@ button.back-to-top,
 }
 
 /*===================== 	Premery text color =====================*/
+.txt-black{
+    color: #000;
+}
+
+
 a,
 .text-primary,
 .primary li:before,
@@ -91,6 +96,10 @@ h6 a:hover,
 /*===================== 	Secondery bg color =====================*/
 .bg-secondry {
     background-color: #c4d87a;
+}
+
+.bg-dark-grey {
+    background-color: #e2dfdf;
 }
 
 /*===================== 	Secondery text color =====================*/

@@ -4054,7 +4054,7 @@ button.back-to-top {
 
     .online-cours h5 {
         font-size: 18px;
-        margin-bottom: 25px;
+        margin-bottom: 5px;
     }
 
     .cours-search {
@@ -4177,9 +4177,9 @@ button.back-to-top {
         padding-right: 3rem;
     }
 
-    /* .principal_img{
-		width: 430px;
-	} */
+    .principal_img {
+        width: 430px;
+    }
 }
 
 @media only screen and (max-width: 770px) {
@@ -4188,7 +4188,13 @@ button.back-to-top {
         padding-right: 3rem;
     }
 
-    /* .principal_img{
-		width: 430px;
-	} */
+    .principal_img {
+        width: 430px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .mr-null {
+        margin-left: -120px;
+    }
 }
