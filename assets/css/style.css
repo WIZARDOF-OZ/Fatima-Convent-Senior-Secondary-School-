@@ -2291,9 +2291,9 @@ button.back-to-top {
   top: 0;
   opacity: 1;
   z-index: 999999999;
-  background-image: url(../images/pre-loaders/loading3.gif);
+  background-image: url(../images/pre-loaders/loader2.svg);
   background-repeat: no-repeat;
-  background-size: 20rem;
+  background-size: 6rem;
   background-position: center;
 }
 
@@ -2315,10 +2315,10 @@ button.back-to-top {
   height: 100%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0);
-  background-size: 20rem;
+  background-size: 6rem;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url(../images/pre-loaders/loading3.gif);
+  background-image: url(../images/pre-loaders/loader2.svg);
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
