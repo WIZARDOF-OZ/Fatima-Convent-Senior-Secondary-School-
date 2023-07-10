@@ -4132,8 +4132,9 @@ button.back-to-top {
   }
 
   .pt-logo img {
-    width: 257px;
-    left: 10px;
+    width: 246px;
+    height: 272px;
+    left: 29px;
     position: relative;
   }
 }
