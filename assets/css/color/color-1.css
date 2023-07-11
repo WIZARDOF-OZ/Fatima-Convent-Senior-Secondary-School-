@@ -1,71 +1,70 @@
 /*===================== 	Premery bg color =====================*/
 :root {
-    --primary: #f3d5aa7c;
-    --sc-primary: #fccc87;
-    --button-color: #939393;
+  --primary: #f3d5aa7c;
+  --sc-primary: #fccc87;
+  --button-color: #939393;
 }
 
 /* Hex */
 .bg-primary,
 .btn,
 .comments-area .comment-form p input[type="submit"],
-.pagination>.active>a,
-.pagination>.active>span,
-.pagination>.active>a:hover,
-.pagination>.active>span:hover,
-.pagination>.active>a:focus,
-.pagination>.active>span:focus,
-.feature-filters .active>[class*="btn"],
-.list-num-count>li:before,
-.pagination-bx.primary .pagination>li>a,
-.pagination-bx.primary .pagination>li>span,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
+.feature-filters .active > [class*="btn"],
+.list-num-count > li:before,
+.pagination-bx.primary .pagination > li > a,
+.pagination-bx.primary .pagination > li > span,
 button.back-to-top,
 .rev-btn {
-    background-color: #c8d350;
+  background-color: #c8d350;
 }
 
 /*Hex color :hover */
 .btn:active,
 .btn:hover,
 .btn:focus,
-.active>.btn,
+.active > .btn,
 .bg-primary-dark,
-.pagination>li>a:hover,
-.pagination>li>span:hover,
-.pagination>li>a:focus,
-.pagination>li>span:focus,
-.pagination>.active>a,
-.pagination>.active>span,
-.pagination>.active>a:hover,
-.pagination>.active>span:hover,
-.pagination>.active>a:focus,
-.pagination>.active>span:focus,
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
 .sidenav .closebtn:hover,
 .sidenav .closebtn:focus,
 .owl-btn-1.primary .owl-prev:hover,
 .owl-btn-1.primary .owl-next:hover,
 .owl-btn-2.primary .owl-prev:hover,
 .owl-btn-2.primary .owl-next:hover,
-.pagination-bx.primary .pagination>li>a:hover,
-.pagination-bx.primary .pagination>li>span:hover,
-.pagination-bx.primary .pagination>li.active>span,
-.pagination-bx.primary .pagination>li.active>a {
-    background-color: #cedf65;
+.pagination-bx.primary .pagination > li > a:hover,
+.pagination-bx.primary .pagination > li > span:hover,
+.pagination-bx.primary .pagination > li.active > span,
+.pagination-bx.primary .pagination > li.active > a {
+  background-color: #cedf65;
 }
 
 /*===================== 	Premery text color =====================*/
-.txt-black{
-    color: #000;
+.txt-black {
+  color: #000;
 }
-
 
 a,
 .text-primary,
 .primary li:before,
-.menu-links .nav>li.active>a,
-.menu-links .nav>li:hover>a,
-.menu-links .nav>li .mega-menu>li ul a:hover,
-.menu-links .nav>li .sub-menu li:hover>a,
+.menu-links .nav > li.active > a,
+.menu-links .nav > li:hover > a,
+.menu-links .nav > li .mega-menu > li ul a:hover,
+.menu-links .nav > li .sub-menu li:hover > a,
 footer a:active,
 footer a:focus,
 footer a:hover,
@@ -81,7 +80,7 @@ footer p a,
 .acod-head a,
 .acod-head a:hover,
 .acod-head a.collapsed:hover,
-.ttr-tabs .nav-tabs>li>a i,
+.ttr-tabs .nav-tabs > li > a i,
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -90,21 +89,21 @@ h5 a:hover,
 h6 a:hover,
 .btn.outline,
 .btn-link:hover {
-    color: #f3d5aa;
+  color: #f3d5aa;
 }
 
 /*===================== 	Secondery bg color =====================*/
 .bg-secondry {
-    background-color: #c4d87a;
+  background-color: #c4d87a;
 }
 
 .bg-dark-grey {
-    background-color: #e2dfdf;
+  background-color: #e2dfdf;
 }
 
 /*===================== 	Secondery text color =====================*/
 .text-secondry {
-    color: #b0bb77;
+  color: #b0bb77;
 }
 
 .ovpr-light:after,
@@ -112,28 +111,38 @@ h6 a:hover,
 .ovpr-dark:after,
 .ovpr:after,
 .bg-primary {
-    background-color: #f3d5aa;
+  background-color: #f7cd6b;
 }
 
 .footer-top,
 .footer-bottom {
-    background-color: #121921;
+  background-color: #121921;
 }
 
 .ovbl-middle::after,
 .ovbl-light::after,
 .ovbl-dark::after {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#100018+0,26006c+50,110038+100 */
-    background: #100018;
-    /* Old browsers */
-    background: -moz-linear-gradient(45deg, #100018 0%, #f3d5aa 50%, #110038 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #100018 0%, #f3d5aa 50%, #110038 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #100018 0%, #f3d5aaba 50%, #110038 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#100018', endColorstr='#110038', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#100018+0,26006c+50,110038+100 */
+  background: #100018;
+  /* Old browsers */
+  background: -moz-linear-gradient(
+    45deg,
+    #100018 0%,
+    #f3d5aa 50%,
+    #110038 100%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    45deg,
+    #100018 0%,
+    #f3d5aa 50%,
+    #110038 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #100018 0%, #f3d5aaba 50%, #110038 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#100018', endColorstr='#110038', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }
 
 .ttr-notify-header::after,
@@ -143,17 +152,17 @@ h6 a:hover,
 .ovpr-dark:after,
 .pricingtable-main,
 .account-head:after {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c1864+0,3f189a+100 */
-    background: #f3d5aa;
-    /* Old browsers */
-    background: -moz-linear-gradient(45deg, #f3d5aa 0%, #fccc87 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #f3d5aa 0%, #fccc87 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #f3d5aa87 0%, #fccc8785 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c1864', endColorstr='#3f189a', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c1864+0,3f189a+100 */
+  background: #f3d5aa;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #f3d5aa 0%, #fccc87 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #f3d5aa 0%, #fccc87 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #f3d5aa87 0%, #fccc8785 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c1864', endColorstr='#3f189a', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }
 
 /* Secondry Color */
@@ -172,16 +181,16 @@ button.back-to-top,
 .recent-news-carousel .owl-nav .owl-prev,
 .testimonial-carousel .owl-nav .owl-next,
 .testimonial-carousel .owl-nav .owl-prev {
-    background-color: #f7b205;
-    color: #000;
+  background-color: #f7b205;
+  color: #000;
 }
 
 .footer_widget ul li a:hover,
 [class*="ovbl-"] .counter-style-1 .counter-text,
 .header-transparent .secondary-menu .btn-link:hover,
-.header-transparent .menu-links .nav>li:hover>a,
-.header-transparent .menu-links .nav>li.active>a {
-    color: #f7b205;
+.header-transparent .menu-links .nav > li:hover > a,
+.header-transparent .menu-links .nav > li.active > a {
+  color: #f7b205;
 }
 
 .course-info-list ul li a.active:hover,
@@ -197,12 +206,12 @@ button.back-to-top:hover,
 .recent-news-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover,
 .testimonial-carousel .owl-nav .owl-prev:hover {
-    background-color: #fccc87;
-    color: #fff;
+  background-color: #fccc87;
+  color: #fff;
 }
 
 .heading-bx.left .title-head {
-    border-color: #f7b205;
+  border-color: #f7b205;
 }
 
 /* .grad{
