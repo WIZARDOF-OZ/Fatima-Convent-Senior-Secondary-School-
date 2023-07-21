@@ -424,7 +424,7 @@ html.body {
 .menu-logo img {
   max-height: 60px;
   width: auto;
-  max-width: 140px;
+  max-width: 142px;
 }
 
 .menu-logo span {
@@ -4208,5 +4208,14 @@ button.back-to-top {
 @media only screen and (min-width: 900px) {
   .mr-null {
     margin-left: -120px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .pt-logo img {
+    width: 15rem;
+    height: 19rem;
+    left: 59px;
+    position: relative;
   }
 }

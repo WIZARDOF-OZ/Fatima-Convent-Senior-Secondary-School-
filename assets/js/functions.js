@@ -390,7 +390,7 @@
 		}
 
 		/* Stylish Scroll */
-		var setStylishScroll = function () {
+		const setStylishScroll = function () {
 			if (!checkSelectorExistence('.content-scroll')) { return; }
 			$(".content-scroll").mCustomScrollbar({
 				setWidth: false,
@@ -400,7 +400,7 @@
 		}
 
 		/* WOW ANIMATION */
-		var wowAnimation = function () {
+		const wowAnimation = function () {
 			/*
 			boxClass: Class name that reveals the hidden box when user scrolls.
 
@@ -426,7 +426,7 @@
 		}
 
 		/* Left Side Menu */
-		var manageLeftSideMenu = function () {
+		const manageLeftSideMenu = function () {
 			jQuery('.menuicon').unbind().on('click', function () {
 				$(this).toggleClass('open');
 			});
