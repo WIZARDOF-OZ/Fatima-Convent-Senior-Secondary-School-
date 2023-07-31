@@ -3137,6 +3137,8 @@ button.back-to-top {
 .portfolio-bx .portfolio-info-bx h4 {
   margin: 0;
   font-size: 18px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .portfolio-bx .portfolio-info-bx h4 a {
@@ -3147,7 +3149,7 @@ button.back-to-top {
   bottom: -100%;
   position: absolute;
   width: 100%;
-  padding: 10px 20px;
+  padding: 6px 20px;
   text-align: left;
   transition: all 0.5s;
 }
