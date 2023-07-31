@@ -63,7 +63,7 @@
 	<script>
 		const btn_send = () => {
 			addEventListener('submit', () => {
-				document.getElementsByClassName('btn-send')
+				document.getElementById('btn-send')
 			})
 		}
 	</script>
@@ -311,8 +311,8 @@
 										</div>
 									</div>
 									<div class="col-lg-12">
-										<button name="submit" type="submit" value="Submit"
-											class="btn button-md btn-send"> Send
+										<button name="submit" type="submit" value="Submit" class="btn button-md"
+											onclick="btn_send()" id="btn-send"> Send
 											Message</button>
 									</div>
 								</div>
