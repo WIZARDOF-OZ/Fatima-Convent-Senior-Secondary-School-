@@ -22,7 +22,7 @@
 
 	<!-- FAVICONS ICON ============================================= -->
 	<link rel="icon" href="assets/images/icon/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/icon/favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/icon/bg-logo-removebg-preview.png" />
 
 	<!-- PAGE TITLE HERE ============================================= -->
 	<title>Fatima Convent Senior Secondary</title>
@@ -63,7 +63,7 @@
 	<script>
 		const btn_send = () => {
 			addEventListener('submit', () => {
-				document.getElementsByClassName('btn-send')
+				document.getElementById('btn-send')
 			})
 		}
 	</script>
@@ -311,8 +311,8 @@
 										</div>
 									</div>
 									<div class="col-lg-12">
-										<button name="submit" type="submit" value="Submit"
-											class="btn button-md btn-send"> Send
+										<button name="submit" type="submit" value="Submit" class="btn button-md"
+											onclick="btn_send()" id="btn-send"> Send
 											Message</button>
 									</div>
 								</div>

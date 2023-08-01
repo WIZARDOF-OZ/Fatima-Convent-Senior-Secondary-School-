@@ -145,7 +145,7 @@
 			setTimeout(function () {
 				if ($('.preloader').length) {
 					$('body').addClass('page-loaded');
-					$('.preloader').fadeOut(500)
+					$('.preloader').fadeOut(500).delay(300)
 				}
 			}, 2000)
 		}
@@ -463,7 +463,7 @@
 			});
 		}
 
-		var manageLoader = function () {
+		let manageLoader = function () {
 			setTimeout(function () {
 				jQuery('#loading-icon-bx').remove();
 			}, 3000);
@@ -522,7 +522,7 @@
 				setDivSameHeight('.equal-height-container .equal-height-container-item');
 				setCounterUp();
 				masonryLayout();
-				manageLoader();
+				// manageLoader();
 
 			},
 
