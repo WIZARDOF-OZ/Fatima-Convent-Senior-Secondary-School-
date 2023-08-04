@@ -7,6 +7,7 @@
 
 	var FormFunction = function () {
 
+
 		var checkSelectorExistence = function (selectorName) {
 			if (jQuery(selectorName).length > 0) { return true; } else { return false; }
 		};
@@ -72,7 +73,7 @@
 
 			jQuery('.ajax-form').on('submit', function (event) {
 				event.preventDefault();
-				var response = '<div class="alert alert-warning alert-dismissable"> Processing.. </div>';
+				var response = '<div class="alert alert-warning alert-dismissable"> Processing.. </div > ';
 				jQuery(this).find(".ajax-message").html(response).show('slow');
 				var formData = new FormData(this);
 				var formAction = jQuery(this).attr('action');
@@ -95,7 +96,8 @@
 						grecaptcha.reset();
 					},
 					error: function (data) {
-						alert('There is something wrong. Please wait or submit again.');
+
+						response = '<div class="alert alert-danger">Failed</div>'
 					},
 
 				});
@@ -152,11 +154,12 @@
 		/* Functions Calling */
 		return {
 			afterLoadThePage: function () {
-				contactForm();
+				// contactForm();
 				subscriptionForm();
 				validateInteger();
 				validateCharacter();
-
+				// validateEmail();
+				// validateURL();
 			},
 		}
 
