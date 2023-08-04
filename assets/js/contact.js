@@ -97,7 +97,7 @@
 					},
 					error: function (data) {
 
-						response = '<div class="alert alert-danger">Failed</div>'
+						response = '<div class="alert alert-danger">' + data.message + '</div>'
 					},
 
 				});
@@ -154,7 +154,7 @@
 		/* Functions Calling */
 		return {
 			afterLoadThePage: function () {
-				// contactForm();
+				contactForm();
 				subscriptionForm();
 				validateInteger();
 				validateCharacter();
