@@ -156,7 +156,7 @@
 				setUpcomingEventCarousel();
 				setRecentNewsCarousel();
 				setTestimonialCarousel();
-				// handlePreloader();
+				handlePreloader();
 			}
 		}
 
