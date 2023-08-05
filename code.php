@@ -1,33 +1,25 @@
-<?php 
+<?php
+  $name = htmlspecialchars($_POST['name']);
+  $email = htmlspecialchars($_POST['email']);
+  $phone = htmlspecialchars($_POST['phone']);
+  $subject_ = htmlspecialchars($_POST['subject']);
+  $message = htmlspecialchars($_POST['message']);
 
-    if(isset($_POST['btn-send']))
-    {
-      $name = $_POST['Name'];
-      $email= $_POST['Email'];
-       $phone = $_POST['Phone'];
-      $mail = $_POST['Subject'];
-      $message = $_POST['Message'];
-      $headers = "Mail from fatima_school_website contact form".$name;
-      $txt = "You have recieved an email from ".$name ."\r\nEmail Id: " .$email ."\r\nPhone No: ". $phone ."\r\n Subject: " .$subject_mail ."\r\n Message:" .$message;
-      
-
-       if(empty($name) || empty($name) || empty($mail) || empty($message))
-       {
-           header('location:error-404.html');
-       }
-       else
-       {
-           $to = "nurajabegum81@gmail.com";
-
-           if(mail($to,$mail,$message,$txt, $headers))
-           {
-               header("Location: contact-1.html?mailsend");
-           }
-       }
+  if(!empty($email) && !empty($message)){
+    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+      $receiver = "nurajabegum81@gmail.com"; //enter that email address where you want to receive all messages
+      $subject = "From: $name <$email>";
+      $body = "Name: $name\nEmail: $email\nPhone: $phone\nSubject: $subject_\n\nMessage:\n$message\n\nRegards,\n$name";
+      $sender = "From: $email";
+      if(mail($receiver, $subject, $body, $sender)){
+         echo "Your message has been sent";
+      }else{
+         echo "Sorry, failed to send your message!";
+      }
+    }else{
+      echo "Enter a valid email address!";
     }
-    else
-    {
-        // header("location:thankyou.html");
-        echo("Failed");
-    }
+  }else{
+    echo "Email and message field is required!";
+  }
 ?>

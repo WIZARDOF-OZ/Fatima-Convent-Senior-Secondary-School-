@@ -54,24 +54,14 @@
 			});
 		};</script>
 
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-	<script type="text/javascript">
-		(function () {
-			emailjs.init("WtTFiyLzg19ww4rzN");
-		})();
-	</script>
-	<script>
-		const btn_send = () => {
-			addEventListener('submit', () => {
-				document.getElementById('btn-send')
-			})
-		}
-	</script>
+
 </head>
 
 <body id="bg">
 	<div class="page-wraper">
-		<div id="loading-icon-bx"></div>
+		<div id="loading-icon-bx" class="preloader">
+			<div class="icon"></div>
+		</div>
 
 		<!-- Header Top ==== -->
 		<header class="header rs-nav">
@@ -240,9 +230,8 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-lg-7 col-md-7">
-							<form class="contact-bx ajax-form" method="POST"
-								action="https://www.fatimaconventschoolrangia.org/code.php">
+						<div class="col-lg-7 col-md-7 wrapper">
+							<form class="contact-bx ajax-form" method="POST" action="code.php">
 								<div class="ajax-message"></div>
 								<div class="heading-bx left">
 									<h2 class="title-head">Get In <span>Touch</span></h2>
@@ -311,9 +300,10 @@
 										</div>
 									</div>
 									<div class="col-lg-12">
-										<button name="submit" type="submit" value="Submit" class="btn button-md"
-											onclick="btn_send()" id="btn-send"> Send
+										<button name="submit" type="submit" value="Submit"
+											class="btn button-md button-area" id="btn-send"> Send
 											Message</button>
+										<span></span>
 									</div>
 								</div>
 							</form>
@@ -447,7 +437,7 @@
 	</div>
 
 	<!-- External JavaScripts -->
-
+	<!-- <script src="assets/js/contactform.js"></script> -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
 	<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
