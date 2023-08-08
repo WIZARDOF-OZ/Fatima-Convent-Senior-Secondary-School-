@@ -1,0 +1,460 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- META ============================================= -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="Tensor_Block" />
+    <meta name="robots" content="" />
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="Fatima Convent Senior Secondary" />
+
+    <!-- OG -->
+    <meta property="og:title" content="Fatima Convent Senior Secondary" />
+    <meta property="og:description" content="Fatima Convent Senior Secondary" />
+    <meta property="og:image" content="" />
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link rel="icon" href="{% static 'images/icon/favicon.ico' %}" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/icon/favicon.png' %}" />
+
+    <!-- PAGE TITLE HERE ============================================= -->
+    <title>Fatima Convent Senior Secondary</title>
+
+    <!-- MOBILE SPECIFIC ============================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+	<script src="{% static 'js/html5shiv.min.js"></script>
+	<script src="{% static 'js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- All PLUGINS CSS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/assets.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- TYPOGRAPHY ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/typography.css' %}">
+
+    <!-- SHORTCODES ============================================= -->
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/shortcodes/shortcodes.css' %}">
+
+    <!-- STYLESHEETS ============================================= -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{% static 'css/color/color-1.css' %}">
+
+    <style>
+        html.body {
+            overflow-x: hidden;
+        }
+    </style>
+
+
+</head>
+
+<body id="bg">
+    <div class="page-wraper">
+        <!-- <div id="loading-icon-bx"></div> -->
+        <!-- Header Top ==== -->
+        <header class="header rs-nav">
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="topbar-left">
+                            <!-- <ul>
+							<li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
+							<li><a href="javascript:;"><i class="fa fa-envelope-o"></i>Support@website.com</a></li>
+						</ul> -->
+                        </div>
+                        <div class="topbar-right">
+                            <ul>
+                                <!-- <li>
+							<select class="header-lang-bx">
+								<option data-icon="flag flag-uk">English UK</option>
+								<option data-icon="flag flag-us">English US</option>
+							</select>
+						</li> -->
+                                <!-- <li><a href="login.html"><i class="ti-new-window"></i> Login</a></li> -->
+                                <!-- <li><a href="register.html">Register</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky-header navbar-expand-lg">
+                <div class="menu-bar clearfix">
+                    <div class="container clearfix">
+                        <!-- Header Logo ==== -->
+                        <div class="menu-logo">
+                            <a href="{% url 'home' %}"><img
+                                    src="{% static 'images/icon/school__logo-removebg-preview.png' %}"
+                                    alt="schoollogo"></a>
+                            <a href="{% url 'home' %}"><img
+                                    src="{% static 'images/icon/school_logo_White_edited-removebg-preview.png' %}"
+                                    alt="logo" class="logo-width"></a>
+                        </div>
+                        <!-- Mobile Nav Button ==== -->
+                        <button class="navbar-toggler collapsed menuicon justify-content-end" type="button"
+                            data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <!-- Navigation Menu ==== -->
+                        <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+                            <div class="menu-logo">
+                                <a href="{% url 'home' %}"><img
+                                        src="{% static 'images/icon/school_logo_White_edited-removebg-preview.png' %}"
+                                        alt="school_logo_white"></a>
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="{% url 'home' %}">Home</a>
+
+                                </li>
+                                <li class="active"><a href="javascript:;">Pages <i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="{% url 'about' %}">About</a>
+                                        </li>
+                                        <li><a href="{% url 'error-404' %}">Event</a></li>
+                                        <!-- <li><a href="javascript:;">FAQ's<i class="fa fa-angle-right"></i></a> -->
+                                        <!-- <ul class="sub-menu">
+											<li><a href="faq-1.html">FAQ's 1</a></li>
+											<li><a href="faq-2.html">FAQ's 2</a></li>
+										</ul> -->
+                                        <!-- </li> -->
+                                        <li><a href="{% url 'contact' %}">Contact Us</a>
+                                        </li>
+                                        <li class="active"><a href="{% url 'gallery' %}">Gallery</a></li>
+
+                                        <!-- <li><a href="error-404.html">404 Page</a></li> -->
+                                    </ul>
+                                </li>
+                                <li class="add-mega-menu"><a href="javascript:;">Academics<i
+                                            class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu add-menu">
+                                        <li class="add-menu-left">
+                                            <h5 class="menu-adv-title">Academics</h5>
+                                            <ul>
+                                                <li><a href="{% url 'error-404' %}">Admission Details</a></li>
+                                                <li><a href="{% url 'error-404' %}">Fee Structure</a></li>
+                                                <li><a href="{% url 'error-404' %}">Result</a></li>
+                                                <!-- <li><a href="event.html">Upcoming Event</a></li>
+											<li><a href="membership.html">Membership</a></li> -->
+                                            </ul>
+                                        </li>
+                                        <li class="add-menu-right">
+                                            <img src="{% static 'images/adv/adv.jpg' %}" alt="school pic" />
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- <li><a href="javascript:;">Blog <i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<li><a href="blog-classic-grid.html">Blog Classic</a></li>
+									<li><a href="blog-classic-sidebar.html">Blog Classic Sidebar</a></li>
+									<li><a href="blog-list-sidebar.html">Blog List Sidebar</a></li>
+									<li><a href="blog-standard-sidebar.html">Blog Standard Sidebar</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+								</ul>
+							</li> -->
+                                <li class="nav-dashboard"><a href="javascript:;">Administration<i
+                                            class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li class="add-menu-left">
+                                            <h5 class="menu-adv-title">School Administration</h5>
+                                        </li>
+
+                                        <li><a href="{% url 'error-404' %}">School Committee</a></li>
+                                        <li><a href="{% url 'error-404' %}">Staff Details</a></li>
+                                        <li><a href="{% url 'error-404' %}">Staff Vacancy</a></li>
+                                        <li><a href="{% url 'error-404' %}">Review</a></li>
+                                        <li><a href="{% url 'error-404' %}">Teacher Profile</a></li>
+                                        <li><a href="{% url 'error-404' %}">User Profile</a></li>
+
+                                    </ul>
+                                </li>
+                                <!-- <li class="nav-dashboard"><a href="javascript:;">Dashboard <i
+										class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<li><a href="admin/{% url 'home' %}">Dashboard</a></li>
+									<li><a href="admin/add-listing.html">Add Listing</a></li>
+									<li><a href="admin/bookmark.html">Bookmark</a></li>
+									<li><a href="admin/courses.html">Courses</a></li>
+									<li><a href="admin/review.html">Review</a></li>
+									<li><a href="admin/teacher-profile.html">Teacher Profile</a></li>
+									<li><a href="admin/user-profile.html">User Profile</a></li>
+									<li><a href="javascript:;">Calendar<i class="fa fa-angle-right"></i></a>
+										<ul class="sub-menu">
+											<li><a href="admin/basic-calendar.html">Basic Calendar</a></li>
+											<li><a href="admin/list-view-calendar.html">List View Calendar</a></li>
+										</ul>
+									</li>
+									<li><a href="javascript:;">Mailbox<i class="fa fa-angle-right"></i></a>
+										<ul class="sub-menu">
+											<li><a href="admin/mailbox.html">Mailbox</a></li>
+											<li><a href="admin/mailbox-compose.html">Compose</a></li>
+											<li><a href="admin/mailbox-read.html">Mail Read</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li> -->
+                            </ul>
+                            <div class="nav-social-link">
+                                <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                <a href="javascript:;"><i class="fa fa-google-plus"></i></a>
+                                <a href="javascript:;"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <!-- Navigation Menu END ==== -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header END ==== -->
+        <!-- Content -->
+        <div class="page-content bg-white">
+            <!-- inner page banner -->
+            <div class="page-banner">
+                <div class="container">
+                    <div class="page-banner-entry">
+                        <h1 class="text-white">Gallery</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb row -->
+            <div class="breadcrumb-row">
+                <div class="container">
+                    <ul class="list-inline">
+                        <li><a href="#">Home</a></li>
+                        <li>Gallery</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Breadcrumb row END -->
+            <!-- Gallery area -->
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li class="current"><a href="#">All projects</a></li>
+                        <li><a href="#">Front-end</a></li>
+                        <li><a href="#">Back-end</a></li>
+                        <li><a href="#">Apps</a></li>
+                        <li><a href="#">Design</a></li>
+                    </ul>
+                </nav>
+                <div id="projects">
+                    <h1 class="heading">All Projects</h1>
+                    <ul id="gallery">
+                        <li class="design"><a href="#"><img src="https://source.unsplash.com/jjtdL443L4w/700x700"></a>
+                        </li>
+                        <li class="apps"><a href="#"><img src="https://source.unsplash.com/y1yQQmozTBw/700x700"></a>
+                        </li>
+                        <li class="back-end"><a href="#"><img src="https://source.unsplash.com/b18TRXc8UPQ/700x700"></a>
+                        </li>
+                        <li class="apps design"><a href="#"><img
+                                    src="https://source.unsplash.com/klRB1BB9pV8/700x700"></a></li>
+                        <li class="front-end"><a href="#"><img
+                                    src="https://source.unsplash.com/y1yQQmozTBw/700x700"></a></li>
+                        <li class="front-end design"><a href="#"><img
+                                    src="https://source.unsplash.com/1vwwZ-BmmrE/700x700"></a></li>
+                        <li class="apps"><a href="#"><img src="https://source.unsplash.com/WLOCr03nGr0/700x700"></a>
+                        </li>
+                        <li class="back-end"><a href="#"><img src="https://source.unsplash.com/iOykDIkZLQw/700x700"></a>
+                        </li>
+                    </ul>
+                    </nav>
+                </div>
+                <!-- modal gallery -->
+                <div class="gallery">
+                    <a class="close" href="#">
+                        <i>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </i>
+                    </a>
+                    <img src="">
+                </div>
+            </div>
+        </div>
+        <!-- Content END-->
+        <!-- Footer ==== -->
+        <footer>
+            <div class="footer-top">
+                <div class="pt-exebar">
+                    <div class="container">
+                        <div class="d-flex align-items-stretch">
+                            <div class="pt-logo mr-auto school-logo">
+                                <a href="{% url 'home' %}"><img
+                                        src="{% static 'images/icon/fatima_name_logo-removebg-preview.png' %}"
+                                        alt="school_logo_white" /></a>
+                            </div>
+                            <div class="pt-social-link">
+                                <ul class="list-inline m-a0">
+                                    <li><a href="#" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" class="btn-link"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#" class="btn-link"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="pt-btn-join">
+                                <a href="#" class="btn ">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
+                            <div class="widget">
+                                <h5 class="footer-title">Sign Up For A Newsletter</h5>
+                                <p class="text-capitalize m-b20">Weekly Breaking news analysis and cutting edge advices
+                                    on job searching.</p>
+                                <div class="subscribe-form m-b20">
+                                    <form class="subscription-form" action="" method="post">
+                                        <div class="ajax-message"></div>
+                                        <div class="input-group">
+                                            <input name="email" required="required" class="form-control"
+                                                placeholder="Your Email Address" type="email">
+                                            <span class="input-group-btn">
+                                                <button name="submit" value="Submit" type="submit" class="btn"><i
+                                                        class="fa fa-arrow-right"></i></button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 col-md-7 col-sm-12">
+                            <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4">
+                                    <div class="widget footer_widget">
+                                        <h5 class="footer-title">Company</h5>
+                                        <ul>
+                                            <li><a href="{% url 'home' %}">Home</a></li>
+                                            <li><a href="{% url 'about' %}">About</a></li>
+
+                                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4">
+                                    <div class="widget footer_widget">
+                                        <h5 class="footer-title">Get In Touch</h5>
+                                        <ul>
+                                            <li><a href="#">Login</a></li>
+
+                                            <li><a href="{% url 'error-404' %}">Gallery</a></li>
+                                            <li><a href="{% url 'error-404' %}">Event</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+							<div class="widget widget_gallery gallery-grid-4">
+								<h5 class="footer-title">Our Gallery</h5>
+								<ul class="magnific-image">
+									<li><a href="{% static 'images/gallery/pic1.jpg" class="magnific-anchor"><img
+												src="{% static 'images/gallery/pic1.jpg" alt=""></a></li>
+									<li><a href="{% static 'images/gallery/pic2.jpg" class="magnific-anchor"><img
+												src="{% static 'images/gallery/pic2.jpg" alt=""></a></li>
+									<li><a href="{% static 'images/gallery/pic3.jpg" class="magnific-anchor"><img
+												src="{% static 'images/gallery/pic3.jpg" alt=""></a></li>
+									<li><a href="{% static 'images/gallery/pic4.jpg" class="magnific-anchor"><img
+												src="{% static 'images/gallery/pic4.jpg" alt=""></a></li>
+									<li><a href="{% static 'images/gallery/pic5.jpg" class="magnific-anchor"><img
+												src="{% static 'images/gallery/pic5.jpg" alt=""></a></li>
+									<li><a href="{% static 'images/gallery/pic6.jpg" class="magnific-anchor"><img
+												src="{% static 'images/gallery/pic6.jpg" alt=""></a></li>
+									<li><a href="{% static 'images/gallery/pic7.jpg" class="magnific-anchor"><img
+												src="{% static 'images/gallery/pic7.jpg" alt=""></a></li>
+									<li><a href="{% static 'images/gallery/pic8.jpg" class="magnific-anchor"><img
+												src="{% static 'images/gallery/pic8.jpg" alt=""></a></li>
+								</ul>
+							</div>
+						</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center text-white">Developed,Designed &
+                            Maintained By &lt;/Tensor_Block&gt;</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer END ==== -->
+        <button class="back-to-top fa fa-chevron-up"></button>
+    </div>
+    <!-- External JavaScripts -->
+    <script>
+        $(document).ready(function () {
+            // filter
+            $('nav a').on('click', function (event) {
+                event.preventDefault();
+                // current class
+                $('nav li.current').removeClass('current');
+                $(this).parent().addClass('current');
+
+                // set new heading
+                $('h1.heading').text($(this).text());
+
+                // filter link text
+                var category = $(this).text().toLowerCase().replace(' ', '-');
+
+                // remove hidden class if "all" is selected
+                if (category == 'all-projects') {
+                    $('ul#gallery li:hidden').fadeIn('slow').removeClass('hidden');
+                } else {
+                    $('ul#gallery li').each(function () {
+                        if (!$(this).hasClass(category)) {
+                            $(this).hide().addClass('hidden');
+                        } else {
+                            $(this).fadeIn('slow').removeClass('hidden');
+                        }
+                    });
+                }
+                return false;
+            });
+            // lightbox
+            $('ul#gallery a').on('click', function (event) {
+                event.preventDefault();
+                var link = $(this).find('img').attr('src');
+                $('.gallery img').attr('src', '');
+                $('.gallery img').attr('src', link);
+                $('.gallery').fadeIn('slow');
+            });
+            // close lightbox
+            $('.gallery').on('click', function (event) {
+                event.preventDefault();
+                $('.gallery').fadeOut('slow');
+            });
+        });
+    </script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+    <script src="{% static 'vendors/magnific-popup/magnific-popup.js' %}"></script>
+    <script src="{% static 'vendors/counter/waypoints-min.js' %}"></script>
+    <script src="{% static 'vendors/counter/counterup.min.js' %}"></script>
+    <script src="{% static 'vendors/imagesloaded/imagesloaded.js' %}"></script>
+    <script src="{% static 'vendors/masonry/masonry.js' %}"></script>
+    <script src="{% static 'vendors/masonry/filter.js' %}"></script>
+    <script src="{% static 'vendors/owl-carousel/owl.carousel.js' %}"></script>
+    <script src="{% static 'js/functions.js' %}"></script>
+    <script src="{% static 'js/contact.js' %}"></script>
+    <script src="{% static 'vendors/switcher/switcher.js' %}"></script>
+</body>
+
+</html>
