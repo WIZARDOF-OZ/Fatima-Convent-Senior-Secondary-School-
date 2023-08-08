@@ -1,0 +1,129 @@
+{% load sekizai_tags thumbnail static %}
+{% addtoblock "css" %}
+<link type="text/css" rel="stylesheet" href="{% static 'css/lightgallery.min.css'%}" />
+{% endaddtoblock %}
+{% addtoblock "css" %}
+<link type="text/css" rel="stylesheet" href="{% static 'css/lg-transitions.min.css'%}" />
+{% endaddtoblock %}
+{% addtoblock "css" %}
+<link type="text/css" rel="stylesheet" href="{% static 'css/lg-fb-comment-box.min.css'%}" />
+{% endaddtoblock %}
+{% addtoblock "css" %}
+    <style>
+        #light-gallery-{{ id }} a img {
+            margin: {{ pageThumbMarginVertical }} {{ pageThumbMarginHorizontal }};
+        }
+    </style>
+{% endaddtoblock %}
+
+{% addtoblock "js" %}
+<script defer type="text/javascript" src="{% static 'js/lightgallery.min.js' %}"></script>
+{% endaddtoblock %}
+{% if thumbnails %}
+  {% addtoblock "js" %}
+    <script defer type="text/javascript" src="{% static 'js/lg-thumbnail.min.js' %}"></script>
+  {% endaddtoblock %}
+{% endif %}
+{% if zoom %}
+  {% addtoblock "js" %}
+    <script defer type="text/javascript" src="{% static 'js/lg-zoom.min.js' %}"></script>
+  {% endaddtoblock %}
+{% endif %}
+{% if fullscreen %}
+  {% addtoblock "js" %}
+    <script defer type="text/javascript" src="{% static 'js/lg-fullscreen.min.js' %}"></script>
+  {% endaddtoblock %}
+{% endif %}
+{% if pager %}
+  {% addtoblock "js" %}
+    <script defer type="text/javascript" src="{% static 'js/lg-pager.min.js' %}"></script>
+  {% endaddtoblock %}
+{% endif %}
+{% if hash %}
+  {% addtoblock "js" %}
+    <script defer type="text/javascript" src="{% static 'js/lg-hash.min.js' %}"></script>
+  {% endaddtoblock %}
+{% endif %}
+{% if share %}
+  {% addtoblock "js" %}
+    <script defer type="text/javascript" src="{% static 'js/lg-share.min.js' %}"></script>
+  {% endaddtoblock %}
+{% endif %}
+
+{% addtoblock "js" %}
+<script type="text/javascript">
+  window.addEventListener('load', function() {
+    $("#light-gallery-{{ id }}").lightGallery({
+      mode: "{{ mode }}",
+      cssEasing: "{{ cssEasing }}",
+      easing: "{{ easing }}",
+      speed: {{ speed }},
+      height: "{{ height }}",
+      width: "{{ width }}",
+      addClass: "{{ addClass }}",
+      startClass: "{{ startClass }}",
+      backdropDuration: {{ backdropDuration }},
+      hideBarsDelay: {{ hideBarsDelay }},
+      useLeft: {{ useLeft|lower }},
+      closable: {{ closable|lower }},
+      loop: {{ loop|lower }},
+      escKey: {{ escKey|lower }},
+      keyPress: {{ keyPress|lower }},
+      controls: {{ controls|lower }},
+      slideEndAnimation: {{ slideEndAnimation|lower }},
+      hideControlOnEnd: {{ hideControlOnEnd|lower }},
+      mousewheel: {{ mousewheel|lower }},
+      preload: {{ preload }},
+      showAfterLoad: {{ showAfterLoad|lower }},
+      nextHtml: "{{ nextHtml }}",
+      prevHtml: "{{ prevHtml }}",
+      index: {{ index }},
+      iframeMaxWidth: "{{ iframeMaxWidth }}",
+      download: {{ download|lower }},
+      counter: {{ counter|lower }},
+      appendCounterTo: "{{ appendCounterTo }}",
+      swipeThreshold: {{ swipeThreshold }},
+      enableDrag: {{ enableDrag|lower }},
+      enableSwipe: {{ enableSwipe|lower }},
+      {% if thumbnails %}
+      thumbnail: {{ thumbnails|lower }},
+      anaimateThumb: {{ animateThumb|lower }},
+      currentPagerPosition: "{{ currentPagerPosition }}",
+      thumbWidth: {{ thumbWidth }},
+      thumbContHeight: {{ thumbContHeight }},
+      thumbMargin: {{ thumbMargin }},
+      showThumbByDefault: {{ showThumbByDefault|lower }},
+      toogleThumb: {{ toggleThumb|lower }},
+      pullCaptionUp: {{ pullCaptionUp|lower }},
+      enableThumbDrag: {{ enableThumbDrag|lower }},
+      enableThumbSwipe: {{ enableThumbSwipe|lower }},
+      {% endif %}
+      {% if zoom %}
+      zoom: {{ zoom|lower }},
+      scale: {{ zoomScale }},
+      enableZoomAfter: {{ zoomEnableZoomAfter }},
+      actualSize: {{ zoomActualSize|lower }},
+      {% endif %}
+      {% if share %}
+      share: {{ share|lower }},
+      facebook: {{ facebook|lower }},
+      facebookDropdownText: "{{ facebookDropdownText }}",
+      twitter: {{ twitter|lower }},
+      twitterDropdownText: "{{ twitterDropdownText }}",
+      googlePlus: {{ googlePlus|lower }},
+      googlePlusDropdownText: "{{ googlePlusDropdownText }}",
+      pinterest: {{ pinterest|lower }},
+      pinterestDropdownText: "{{ pinterestDropdownText }}",
+      {% endif %}
+    });
+  });
+</script>
+{% endaddtoblock %}
+
+<div id="light-gallery-{{ id }}" class="light-gallery-plugin">
+  {% for image in images %}
+  <a href="{{ image.file.url }}">
+    <img src="{% thumbnail image.file pageThumbWidthHeight upscale crop %}"></img>
+  </a>
+  {% endfor %}
+</div>
