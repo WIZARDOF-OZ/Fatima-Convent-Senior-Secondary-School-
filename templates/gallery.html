@@ -60,7 +60,7 @@
 
 <body id="bg">
     <div class="page-wraper">
-        <!-- <div id="loading-icon-bx"></div> -->
+        <div id="loading-icon-bx"></div>
         <!-- Header Top ==== -->
         <header class="header rs-nav">
             <div class="top-bar">
@@ -239,48 +239,50 @@
             <!-- Breadcrumb row END -->
             <!-- Gallery area -->
             <div class="container">
-                <nav>
-                    <ul>
-                        <li class="current"><a href="#">All projects</a></li>
-                        <li><a href="#">Front-end</a></li>
-                        <li><a href="#">Back-end</a></li>
-                        <li><a href="#">Apps</a></li>
-                        <li><a href="#">Design</a></li>
-                    </ul>
-                </nav>
-                <div id="projects">
-                    <h1 class="heading">All Projects</h1>
-                    <ul id="gallery">
-                        <li class="design"><a href="#"><img src="https://source.unsplash.com/jjtdL443L4w/700x700"></a>
+                <div class="feature-filters clearfix center m-b40">
+                    <ul class="filters" data-toggle="buttons">
+                        {% for category in distinct_categories %}
+                        <li data-filter="{{category}}" class="btn">
+                            <input type="radio">
+                            <a href="#"><span>{{category}}</span></a>
                         </li>
-                        <li class="apps"><a href="#"><img src="https://source.unsplash.com/y1yQQmozTBw/700x700"></a>
-                        </li>
-                        <li class="back-end"><a href="#"><img src="https://source.unsplash.com/b18TRXc8UPQ/700x700"></a>
-                        </li>
-                        <li class="apps design"><a href="#"><img
-                                    src="https://source.unsplash.com/klRB1BB9pV8/700x700"></a></li>
-                        <li class="front-end"><a href="#"><img
-                                    src="https://source.unsplash.com/y1yQQmozTBw/700x700"></a></li>
-                        <li class="front-end design"><a href="#"><img
-                                    src="https://source.unsplash.com/1vwwZ-BmmrE/700x700"></a></li>
-                        <li class="apps"><a href="#"><img src="https://source.unsplash.com/WLOCr03nGr0/700x700"></a>
-                        </li>
-                        <li class="back-end"><a href="#"><img src="https://source.unsplash.com/iOykDIkZLQw/700x700"></a>
+                        {% endfor %}
+                        <li data-filter="" class="btn active">
+                            <input type="radio">
+                            <a href="#"><span>All</span></a>
                         </li>
                     </ul>
-                    </nav>
                 </div>
-                <!-- modal gallery -->
-                <div class="gallery">
-                    <a class="close" href="#">
-                        <i>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </i>
-                    </a>
-                    <img src="">
+                <!-- Gallery Images -->
+                <div class="clearfix">
+                    <ul id="masonry" class="ttr-gallery-listing magnific-image row">
+                        {% for gallery_item in gallery_images %}
+                        <li class="action-card col-lg-3 col-md-4 col-sm-6 {{gallery_item.distinct_categories}}">
+                            <div class="ttr-box portfolio-bx">
+                                <div class="ttr-media media-ov2 media-effect">
+                                    <a href="javascript:void(0);">
+                                        <img src="{{gallery_item.photo}}" alt="{{gallery_item.subtitle}}">
+                                    </a>
+                                    <div class="ov-box">
+                                        <div class="overlay-icon align-m">
+                                            <a href="{{gallery_item.photo}}" class="magnific-anchor"
+                                                title="{{gallery_item.subtitle}}">
+                                                <i class="ri-image-2-line"></i>
+                                            </a>
+                                        </div>
+                                        <div class="portfolio-info-bx bg-primary">
+                                            <h4><a href="#">{{gallery_item.subtitle}}</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
+                
             </div>
+
         </div>
         <!-- Content END-->
         <!-- Footer ==== -->
@@ -290,8 +292,7 @@
                     <div class="container">
                         <div class="d-flex align-items-stretch">
                             <div class="pt-logo mr-auto school-logo">
-                                <a href="{% url 'home' %}"><img
-                                        src="{% static 'images/icon/fatima_name_logo-removebg-preview.png' %}"
+                                <a href="#"><img src="{% static 'images/icon/fatima_name_logo-removebg-preview.png' %}"
                                         alt="school_logo_white" /></a>
                             </div>
                             <div class="pt-social-link">
@@ -396,50 +397,6 @@
         <button class="back-to-top fa fa-chevron-up"></button>
     </div>
     <!-- External JavaScripts -->
-    <script>
-        $(document).ready(function () {
-            // filter
-            $('nav a').on('click', function (event) {
-                event.preventDefault();
-                // current class
-                $('nav li.current').removeClass('current');
-                $(this).parent().addClass('current');
-
-                // set new heading
-                $('h1.heading').text($(this).text());
-
-                // filter link text
-                var category = $(this).text().toLowerCase().replace(' ', '-');
-
-                // remove hidden class if "all" is selected
-                if (category == 'all-projects') {
-                    $('ul#gallery li:hidden').fadeIn('slow').removeClass('hidden');
-                } else {
-                    $('ul#gallery li').each(function () {
-                        if (!$(this).hasClass(category)) {
-                            $(this).hide().addClass('hidden');
-                        } else {
-                            $(this).fadeIn('slow').removeClass('hidden');
-                        }
-                    });
-                }
-                return false;
-            });
-            // lightbox
-            $('ul#gallery a').on('click', function (event) {
-                event.preventDefault();
-                var link = $(this).find('img').attr('src');
-                $('.gallery img').attr('src', '');
-                $('.gallery img').attr('src', link);
-                $('.gallery').fadeIn('slow');
-            });
-            // close lightbox
-            $('.gallery').on('click', function (event) {
-                event.preventDefault();
-                $('.gallery').fadeOut('slow');
-            });
-        });
-    </script>
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'vendors/bootstrap/js/popper.min.js' %}"></script>
     <script src="{% static 'vendors/bootstrap/js/bootstrap.min.js' %}"></script>
