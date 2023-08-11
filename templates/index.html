@@ -39,7 +39,7 @@
     <!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.min.js"></script>
 	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+	<![endif] -->
 
     <!-- All PLUGINS CSS ============================================= -->
     <link rel="stylesheet" href="{% static 'css/assets.css'%}">
@@ -61,8 +61,6 @@
     <link rel="stylesheet" type="text/css" href="{% static 'vendors/revolution/css/navigation.css'%}">
     <!-- REVOLUTION SLIDER END -->
 
-
-
     <style>
         .alignleft {
             float: left;
@@ -74,8 +72,8 @@
 
 <body id="bg">
     <div class="page-wraper">
-        <!-- <div id="loading-icon-bx" class="preloader">
-                                                                            <div class="icon"></div> -->
+        <div id="loading-icon-bx" class="preloader">
+            <div class="icon"></div>
         </div>
     <!-- Header Top ==== -->
     <header class="header rs-nav header-transparent">
@@ -122,9 +120,9 @@
                     <!-- Navigation Menu ==== -->
                     <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
                         <div class=" logo" id="logo1">
-                            <a href="{% url 'home' %}"><img class="img-align"
-                                    src="{% static 'images/icon/school_logo_White_edited-removebg-preview.png' %}"
-                                    alt="Home page" width="60"></a>
+                            <a href="{% url 'home' %}">
+                                <img class="img-align" src="{% static 'images/icon/school_logo_White_edited-removebg-preview.png' %}"alt="Home page" width="60">
+                            </a>
                         </div>
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="{% url 'home' %}">Home</a>
@@ -166,14 +164,12 @@
                                     <li class="add-menu-left">
                                         <h5 class="menu-adv-title">School Administration</h5>
                                     </li>
-
                                     <li><a href="{% url 'error-404' %}">School Committee</a></li>
                                     <li><a href="{% url 'error-404' %}">Staff Details</a></li>
                                     <li><a href="{% url 'error-404' %}">Staff Vacancy</a></li>
                                     <li><a href="{% url 'error-404' %}">Review</a></li>
                                     <li><a href="{% url 'error-404' %}">Teacher Profile</a></li>
                                     <li><a href="{% url 'error-404' %}">User Profile</a></li>
-
                                 </ul>
                             </li>
 

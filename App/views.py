@@ -11,7 +11,7 @@ def home(request):
 
 def about_view(request):
     about = list(About.objects.all())  
-    print(about)
+    # print(about)
     data = {
         'about': about,
     }
@@ -28,7 +28,8 @@ def gallery(request):
     distinct_categories = GalleryItem.objects.values_list('category', flat=True).distinct()
 
     # Fetch all gallery images
-    gallery_images = GalleryItem.objects.all()
+    gallery_images = list(GalleryItem.objects.all())
+
 
     data = {
         'distinct_categories': distinct_categories,

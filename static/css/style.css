@@ -357,7 +357,7 @@ html.body {
 @media only screen and (max-width: 767px) {
   .top-bar [class*="col-"] {
     width: 100%;
-    /* text-align: right; */
+    text-align: right;
     padding: 10px 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
@@ -1400,7 +1400,6 @@ html.body {
 	8. PAGE BANNER
 =========================*/
 .page-banner {
-  background-image: url('../images/img1.jpeg');
   height: 300px;
   background-size: cover;
   background-position: center center;
@@ -3124,136 +3123,354 @@ button.back-to-top {
   border: 0;
 }
 
-/* Gallery section */
-.container {
-  width: 90%;
-  max-width: 960px;
-  margin: 30px auto;
-  position: relative;
-  text-align: center;
+/* Gallery Box */
+.portfolio-bx {
+  margin-bottom: 30px;
 }
 
-h1 {
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  color: #F39CC3;
-}
-
-nav {
-  display: block;
-  width: 100%;
-}
-
-ul {
- list-style: none; 
- margin-bottom: 20px;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-nav > ul > li > a {
-  text-transform: uppercase;
-  padding: 4px 10px;
-  margin-right: 2px;
-  margin-left: 2px;
-  text-decoration: none;
-  color: #27A4DD;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 25px;
-  border: 1px solid #27A4DD;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-.hidden {
-  display: none;
-}
-
-nav > ul > li > a:hover, .current a {
+.portfolio-bx .portfolio-info-bx p {
   color: #fff;
-  background-color: #27A4DD;
+  font-size: 13px;
+  margin-bottom: 0;
 }
 
-#projects > ul > li {
-  display: inline-block;
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 5px;
-  width: 23%;
-  height: auto;
-  cursor: pointer;
-  border-radius: 5px;
-  /* Padding stays within the width */
-  box-sizing: border-box;
-  position: relative;
-  opacity: 0.7;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+.portfolio-bx .portfolio-info-bx h4 {
+  margin: 0;
+  font-size: 18px;
 }
 
-#projects > ul > li:hover {
-  opacity: 1;
+.portfolio-bx .portfolio-info-bx h4 a {
+  color: #fff;
 }
 
-img {
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-.gallery {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.8);
-  padding: 40px 10px;
-  display: none;
-  box-sizing: border-box;
-}
-
-.gallery > img {
-  max-height: 100%;
-  width: auto;
-}
-
-.close i {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  height: 30px;
-  width: 30px;
-}
-
-.bar {
-  display: block;
+.portfolio-bx .portfolio-info-bx {
+  bottom: -100%;
   position: absolute;
-  top: 13px;
-  float: left;
-  width: 30px;
-  border-bottom: 4px solid #fff;
-  transform: rotate(45deg);
+  width: 100%;
+  padding: 10px 20px;
+  text-align: left;
+  transition: all 0.5s;
 }
 
-.bar:first-child {
-  transform: rotate(-45deg);
+.portfolio-bx .overlay-icon a {
+  font-size: 18px;
 }
 
-@media (max-width: 768px){
-  #projects > ul > li {
-      width: 48%;
-  }
+.portfolio-bx .overlay-icon a i {
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
 }
 
-@media (max-width: 568px) {
-  #projects > ul > li {
-      width: 100%;
-  }
+.portfolio-bx:hover .portfolio-info-bx {
+  bottom: 0;
 }
+
+.portfolio-bx:hover .media-ov2:before,
+.portfolio-bx:hover .media-ov2:after {
+  opacity: 0.7;
+}
+
+.widget-courses .ttr-post-meta .price del,
+.widget-courses .ttr-post-meta .price h5 {
+  display: inline-block;
+  font-weight: 400;
+}
+
+.widget-courses .ttr-post-meta .price del {
+  font-size: 10px;
+}
+
+.widget-courses .ttr-post-meta .price h5 {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.widget-courses .ttr-post-meta .price .free {
+  color: #1fd36b;
+}
+
+.widget-courses .ttr-post-meta .review {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* course detail bx */
+.course-detail-bx {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 100px;
+}
+
+.course-price {
+  text-align: center;
+  padding: 10px 0 20px;
+}
+
+.course-price .price,
+.course-price del {
+  display: inline-block;
+}
+
+.course-price .price {
+  font-size: 35px;
+  margin: 0;
+}
+
+.teacher-info {
+  display: flex;
+  align-items: center;
+}
+
+.course-price del {
+  margin: 0;
+}
+
+.teacher-bx {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  margin: 20px -20px 0;
+  border-width: 1px 0 1px 0;
+}
+
+.teacher-name h5 {
+  font-size: 16px;
+  margin-bottom: 0;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+.teacher-thumb {
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+  border-radius: 55px;
+  margin-right: 15px;
+}
+
+.teacher-name span {
+  font-size: 13px;
+  color: #6a6a6a;
+}
+
+.course-detail-bx .cours-more-info .price span {
+  font-size: 12px;
+  color: #3c3c3c;
+}
+
+.course-detail-bx .cours-more-info .price h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.course-detail-bx .cours-more-info {
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  margin: 0;
+  border-top: 0;
+  margin: 0 -20px;
+}
+
+.course-detail-bx .cours-more-info .price,
+.cours-more-info .review {
+  padding: 8px 20px;
+}
+
+.course-info-list {
+  padding-top: 20px;
+  margin: 0 -20px;
+}
+
+.course-info-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.course-info-list ul li {
+  display: block;
+  width: 100%;
+}
+
+.course-info-list ul li a {
+  padding: 8px 20px;
+  font-size: 15px;
+  color: #808080;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.course-info-list ul li a.active,
+.course-info-list ul li a:hover {
+  color: #fff;
+  background: var(--primary);
+}
+
+.course-info-list ul li a i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.courses-post .post-title {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.course-features {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+  position: sticky;
+  top: 80px;
+}
+
+.course-features li {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+}
+
+.course-features li i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: var(--primary);
+}
+
+.course-features li .label {
+  width: 60%;
+}
+
+.course-features li .value {
+  width: 40%;
+}
+
+.curriculum-list ul li,
+.curriculum-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.curriculum-list ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.curriculum-list > li {
+  margin-bottom: 30px;
+}
+
+.curriculum-list h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.instructor-bx {
+  display: flex;
+  align-items: start;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 20px;
+  margin-bottom: 30px;
+}
+
+.instructor-author {
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  border-radius: 55px;
+  margin-right: 15px;
+  min-width: 85px;
+}
+
+.instructor-info h6 {
+  margin-bottom: 0;
+}
+
+.instructor-info p,
+.instructor-info span {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.review-bx {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.all-review {
+  width: 25%;
+  text-align: center;
+  margin-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 10px;
+}
+
+.all-review .rating-type {
+  margin: 0;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.all-review span {
+  font-size: 14px;
+}
+
+.review-bar {
+  width: 75%;
+}
+
+.bar-bx {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+.bar-bx .middle {
+  width: 80%;
+}
+
+.bar-bx .side {
+  width: 10%;
+}
+
+.bar-bx .side.right {
+  text-align: right;
+}
+
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+.bar-container [class*="bar"] {
+  height: 8px;
+  background: var(--primary);
+}
+
 /* MemberShip */
 .pricingtable-inner {
   text-align: center;
@@ -4001,6 +4218,11 @@ img {
     left: 59px;
     position: relative;
   }
+}
+
+/* About Page Banner */
+.page-banner{
+  background-image: url("../images/img1.jpeg");
 }
 
 /* Infrastructure banner */
