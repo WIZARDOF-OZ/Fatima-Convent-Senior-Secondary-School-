@@ -331,6 +331,33 @@
 		}
 
 		/* Set Masonry Layout */
+		var masonryLayout = function () {
+			if (!checkSelectorExistence('#masonry')) { return; }
+			var self = $("#masonry");
+			if (jQuery('.action-card').length) {
+				self.imagesLoaded(function () {
+					self.masonry({
+						gutterWidth: 15,
+						isAnimated: true,
+						itemSelector: ".action-card"
+					});
+				});
+			}
+
+
+			if (!checkSelectorExistence('.filters')) { return; }
+			jQuery(".filters").on('click', 'li', function (e) {
+				e.preventDefault();
+				var filter = $(this).attr("data-filter");
+				self.masonryFilter({
+					filter: function () {
+						if (!filter) return true;
+						return $(this).hasClass(filter);
+					}
+				});
+			});
+		}
+
 		/* Set Counter Up Function */
 		var setCounterUp = function () {
 			if (!checkSelectorExistence('.counter')) { return; }
