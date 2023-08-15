@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-f&cezp*&k=yu$&2$2*zmaqf85uyz$v!)o-&9*d7yjp2)*5o=&7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', '.now.sh', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -135,3 +135,15 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Use django-environ to manage environment variables
+import environ
+
+env = environ.Env()
+environ.Env.read_env()  # Load .env file if available
+
+# Set DEBUG to False in production
+DEBUG = env.bool('DEBUG', default=False)
+
+# Configure STATICFILES_STORAGE to use whitenoise for static files
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
