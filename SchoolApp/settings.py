@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -136,14 +137,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Use django-environ to manage environment variables
-import environ
-
-env = environ.Env()
-environ.Env.read_env()  # Load .env file if available
-
-# Set DEBUG to False in production
-DEBUG = env.bool('DEBUG', default=False)
-
-# Configure STATICFILES_STORAGE to use whitenoise for static files
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
