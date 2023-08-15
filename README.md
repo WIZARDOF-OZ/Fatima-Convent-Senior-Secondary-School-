@@ -2,7 +2,7 @@
 
 1. Clone the repository:
  ```
-    git clone https://github.com/MRINMOY662/Fatima-Convent-Senior-Secondary-School-.git  
+git clone https://github.com/MRINMOY662/Fatima-Convent-Senior-Secondary-School-.git  
 ```
 
 2. Navigate to the project directory:
@@ -13,11 +13,11 @@
 3. Activate the virtual environment:
 - On macOS/Linux:
 ```
-source venv/bin/activate
+source env/bin/activate
 ```
-- On Windows:
+- On Windows (For PowerShell):
 ```
-venv\Scripts\activate
+env\Scripts\Activate.ps1
 ```
 
 4. Install the project dependencies:
