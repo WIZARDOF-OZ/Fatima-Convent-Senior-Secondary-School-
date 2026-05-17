@@ -1,0 +1,23 @@
+# Virtual environment
+env/
+venv/
+.venv/
+myenv/
+.myenv/
+
+# Django collected static (served separately)
+staticfiles/
+
+# Media uploads (use cloud storage in production)
+media/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+
+# DB
+db.sqlite3
